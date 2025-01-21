@@ -30,3 +30,28 @@ body {
 
 /* ORIGINAL CSS ENDS */
 
+/* Flex & Grid CSS */
+
+/* Displays the emoji cards in grid, with 2 columns and a 20px gap for horizontal and vertical */
+.emojis {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+/* Displays the items in the emoji card in flex, in column direction to display vertically */
+.emoji {
+    display:flex;
+    flex-direction: column;
+}
+
+/* Targets the spans that show the emojis in the emoji cards. Changes the order to display first using -1, and aligns it in the center of the x axis (in this case, the cross axis due to the direction change) */
+.emoji > span.icon {
+    order:-1;
+    align-self:center;
+}
+
+/* Targets the paragraph in the emoji cards. Causes the paragraph to take up any extra space in the card, which pushes the button to the end. */
+.emoji > p {
+    flex-grow: 1;
+}
