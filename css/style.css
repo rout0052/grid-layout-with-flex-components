@@ -32,11 +32,11 @@ body {
 
 /* Flex & Grid CSS */
 
-/* Displays the emoji cards in grid, with 2 columns and a 20px gap for horizontal and vertical */
+/* Displays the emoji cards in grid, with 2 columns and a 15px (i estimated the size based on image) gap for horizontal and vertical */
 .emojis {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
+    gap:15px;
 }
 
 /* Displays the items in the emoji card in flex, in column direction to display vertically */
